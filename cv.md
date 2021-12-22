@@ -20,6 +20,8 @@ Beginner programmer, finishing medic.
 
 ## Experience
 I have very little experience in programming, I’m study using learnJS, as well as using YouTube and Google. I started studying 5 months ago, during this time I learned pixel layout and the basics of js, how to work with the DOM tree, the principle of DOM-events, I know how to use arrays and objects. Most likely, all these skills are still at the initial level, I will be glad to learn more while studying at this school.
+
+I have a lot of ideas for projects in my head, so I want to fully master JS and React first. This will allow me to implement many of my ideas and, of course, will come in handy when working for the company.
 [This is the link to my code on CodeWars.](https://www.codewars.com/kata/reviews/54df3072a1b757b06d000050/groups/6196e8b969187e0001426b21)  
 ## Interests
 
