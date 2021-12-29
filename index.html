@@ -1,0 +1,151 @@
+   <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/framer.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/javascript.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+    <body> 
+       <header>
+          <nav>
+            <ul class="navigation">
+              <li> <a href="#user"> <img src="User.svg" alt="svg users" width="35" height="35"></a></li>
+             <li>  <a href="#contact"> <img src="alternate-email-outlined-24px.svg" alt="svg contact" width="40" height="40"></a></li>
+              <li> <a href="#education"> <img src="school-24px.svg" alt="svg education" width="45" height="45"></a></li>
+              <li> <a href="#code"> <img src="code-24px.svg" alt="svg code" width="45" height="45"></a></li>
+              <li> <a href="#interest"> <img src="Robot.svg" alt="svg interest" width="42" height="42"></a></li>
+            </ul>
+          </nav>
+       </header>
+       <main>  
+          <section class="about-me-up">
+<h1>Zaitseva Tatyana</h1>
+<img class="avatar-img" src="avatar.png" alt="This is user avatar" width="200" height="200">
+<div class="map" ><img src="Map-Marker-Alt.svg" alt="svg map point" width="15" height="20"><p>Russia, Penza</p>
+</div> 
+   </section>
+
+   <section class="about-me-content" id="user">
+<h2>About myself</h2> 
+<p>My name is Zaitseva Tatyana. I am beginner programmer and finishing medic.</p>
+<h2 id="contact">Contacts</h2> 
+<ul class="contacts" >
+   <li> <a href="https://t.me/TashaMias"> <img src="Telegram.svg" alt="svg telegram" width="45" height="45" ></a> </li> 
+   <li> <a href="mailto:rabbit-t03@yandex.ru"> <img src="email-24px.svg" alt="svg mail" width="45" height="45"> </a></li>
+   <li> <a href="https://discord.gg/MFSPG48uTv"> <img src="Discord.svg" alt="svg discord" width="45" height="45"> </a></li>
+   <li>  <a href="https://github.com/TashaMia"> <img src="Github.svg" alt="svg GH" width="45" height="45"></a> </li>
+</ul>
+<h2 id="education">Education</h2> 
+<h3>Education before I fell in love with programming:</h3> 
+<ul class="education">
+<li>- Secondary completed education (11th grade).</li>
+<li>- Incomplete higher education (currently at the stage of completion, course 5/6):</li>
+ <li>
+    <ul>
+		<li>Institute: medical</li>
+		<li>Specialty: medical care</li>
+    </ul>
+ </li>
+</ul>
+<h3>Programming education:</h3> 
+<ul class="education" >
+    <li class="li">HTML-Academy  </li>
+   <li> <input class="inp" type="range" max="100" min="0" value="50" ></li>
+    <li class="li">Code-Camp </li>
+   <li> <input class="inp" type="range" max="100" min="0" value="80" > </li>
+    <li class="li">Self-study</li>
+    <li><input class="inp" type="range" max="100" min="0" value="30" ></li>
+</ul>
+<h3>English-level</h3>
+<p> I can read English well, I had to read a lot of scientific articles in the field of medicine from foreign sources. But I speak and perceive speech by ear much worse. On the Skyeng platform, my level of English was B1, but I think it is more likely to be A2. Now I am in the process of learning the language. In my plans to own it at the B2 level by the time of communication with the mentor. 
+</p>
+<h2>Experience</h2> 
+<p>I have very little experience in programming, I’m study using learnJS, as well as using YouTube and Google. I started studying 5 months ago, during this time I learned pixel layout and the basics of js, how to work with the DOM tree, the principle of DOM-events, I know how to use arrays and objects. Most likely, all these skills are still at the initial level, I will be glad to learn more while studying at this school.
+</p>
+<p>I have a lot of ideas for projects in my head, so I want to fully master JS and React first. This will allow me to implement many of my ideas and, of course, will come in handy when working for the company.
+<a href="https://www.codewars.com/kata/reviews/54df3072a1b757b06d000050/groups/6196e8b969187e0001426b21">This is the link to my code on CodeWars.</a></p>
+  
+<h2 id="code">My Code</h2>
+<h3>Exercise 1</h3>
+<p>It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.</p>
+<pre>
+   <code>
+   function removeChar(str){
+      let ar = str.split('');
+      ar.pop();
+      ar.shift();
+      return(ar.join(''))
+   };
+   </code>
+</pre>
+<h3>Exercise 2</h3>
+<p>Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+   Note: input will never be an empty string</p>
+<pre>
+ <code> 
+   function fakeBin(x){
+      const num = x.split('');
+      let numnew =[];
+      for( let i= 0; i &lt; num.length; i++){
+        if(num[i] >= 5){
+          numnew.push('1')
+        }else{
+          numnew.push('0')
+        }
+      }
+      return( numnew.join(''))
+   } 
+ </code>
+</pre>
+<h3>Exercise 3</h3>
+<p>Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
+   </p>
+<pre> 
+   <code>
+   function toBinary(n){
+      let ar =[]
+      let b =n;
+      if(n==1){
+         return 1
+      }
+      for(let i = n; i > 0; i--){
+         if(b%2>0){
+            b= (b-1)/2;
+            ar.push(1);
+         }else{
+            b= b/2;
+            ar.push(0);
+         }
+      }
+      let j= ar.reverse();
+      let str = j.join('');
+      return (Number(str));
+   } 
+   </code>
+</pre>
+<h2 id="interest">Interests</h2> 
+<ul class="interests">
+    <li>Dinosaurs</li>
+    <li>Programming</li>
+    <li>Robots</li>
+    <li>Psychology</li>
+</ul>
+   
+</section>
+       </main>
+    <footer>
+      <a href="https://rs.school/js/"> <img src="rs_school_js.svg" alt="svg RS" width="100" height="100"></a>
+      <a href="https://github.com/TashaMia"> <img src="Github.svg" alt="svg GH" width="60" height="60"></a>
+      <p>Made in 2021.</p> 
+    </footer>
+    </body>
+</html>
