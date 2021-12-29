@@ -1,4 +1,114 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: #310068;
+color: #a265d2;
+font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-radius: 12px;
+ background: rgb(12,8,79);
+ background: linear-gradient(90deg, rgba(12,8,79,1) 0%, rgba(71,0,143,1) 0%, rgba(208,65,127,1) 100%, rgba(14,8,125,1) 100%);
+    width: 96%; 
+    margin-top: 5px;
+
+    
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.about-me-content{
+ border-radius: 10px;
+    width: 80%;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+   align-self: : start;
+}
+
 h2{
-    color: red;
-    font-size: 20px;
+    color:#ec8c57;
+}
+h3, a{
+    color:#d4187d;
+}
+.avatar-img{
+    object-fit: cover;
+    border-radius: 100%;
+}
+.contacts{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-right: 25px;
+}
+.interests{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+}
+
+.about-me-up{
+    color:#E8D4E5;
+}
+.inp{
+    width: 90%;
+    background: none;
+    background: rgb(12,8,79);
+    pointer-events: none;
+    -webkit-appearance: none; 
+    background: transparent;
+    background: linear-gradient(90deg, rgba(12,8,79,1) 0%, rgba(71,0,143,1) 0%, rgba(208,65,127,1) 100%, rgba(14,8,125,1) 100%);
+    height: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+.inp::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.inp::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: #EC8C57;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    color:#D8C7DB;
+    font-size: 16px;
+    
 }

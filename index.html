@@ -3,20 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="style.css">
-    </head>   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+    <body> 
+       <header>
+          <h2>CV</h2>
+       </header>
+       <main>  
+          <section class="about-me-up">
+<h1>Zaitseva Tatyana</h1>
+<img class="avatar-img" src="avatar.png" alt=" " width="200" height="200">
+<section class="map" ><img src="Map Marker Alt.svg" width="15" height="20"><p>Russia, Penza</p>
+</section> 
+          </section>
 
+   <section class="about-me-content">
 <h2>About myself</h2> 
 <p>My name is Zaitseva Tatyana. I am beginner programmer and finishing medic.</p>
 <h2>Contacts</h2> 
-<ul>
-   <li>tel: 89631076550</li> 
-   <li>email: rabbit-t03@yandex.ru</li>
-   <li>discord: Tatyana#1526(@TashaMia)</li>
+<ul class="contacts">
+   <li> <a href="https://t.me/TashaMias"> <img src="Telegram.svg" width="45" height="45" ></a> </li> 
+   <li> <a href="mailto:rabbit-t03@yandex.ru"> <img src="email-24px.svg" width="45" height="45"> </a></li>
+   <li> <a href="https://discord.gg/MFSPG48uTv"> <img src="Discord.svg" width="45" height="45"> </a></li>
+   <li>  <a href="https://github.com/TashaMia"> <img src="Github.svg" width="45" height="45"></a> </li>
 </ul>
 <h2>Education</h2> 
 <h3>Education before I fell in love with programming:</h3> 
-<ul>
+<ul class="education">
 <li>Secondary completed education (11th grade).</li>
 <li>Incomplete higher education (currently at the stage of completion, course 5/6):</li>
     <ul>
@@ -25,13 +43,16 @@
     </ul>    
 </ul>
 <h3>Programming education:</h3> 
-<ul>
-    <li>HTML-Academy</li>
-    <li>Code-Camp</li>
-    <li>Self-study</li>
+<ul class="education" >
+    <li class="li">HTML-Academy  </li>
+    <input class="inp" type="range" max="100" min="0" value="50" >
+    <li class="li">Code-Camp </li>
+    <input class="inp" type="range" max="100" min="0" value="80" > 
+    <li class="li">Self-study</li>
+    <input class="inp" type="range" max="100" min="0" value="30" >
 </ul>
 <h3>English-level</h3>
-<p>I can read English well, I had to read a lot of scientific articles in the field of medicine from foreign sources. But I speak and perceive speech by ear much worse. On the Skyeng platform, my level of English was B1, but I think it is more likely to be A2. Now I am in the process of learning the language. In my plans to own it at the B2 level by the time of communication with the mentor. 
+<p> I can read English well, I had to read a lot of scientific articles in the field of medicine from foreign sources. But I speak and perceive speech by ear much worse. On the Skyeng platform, my level of English was B1, but I think it is more likely to be A2. Now I am in the process of learning the language. In my plans to own it at the B2 level by the time of communication with the mentor. 
 </p>
 <h2>Experience</h2> 
 <p>I have very little experience in programming, I’m study using learnJS, as well as using YouTube and Google. I started studying 5 months ago, during this time I learned pixel layout and the basics of js, how to work with the DOM tree, the principle of DOM-events, I know how to use arrays and objects. Most likely, all these skills are still at the initial level, I will be glad to learn more while studying at this school.
@@ -41,10 +62,17 @@
   
 
 <h2>Interests</h2> 
-<ul>
+<ul class="interests">
     <li>Dinosaurs</li>
     <li>Programming</li>
     <li>Robots</li>
     <li>Psychology</li>
 </ul>
+   
+</section>
+       </main>
+    <footer>
+       
+    </footer>
+    </body>
 </html>
