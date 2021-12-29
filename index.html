@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title>Resume</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/framer.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/javascript.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +72,64 @@
 <p>I have a lot of ideas for projects in my head, so I want to fully master JS and React first. This will allow me to implement many of my ideas and, of course, will come in handy when working for the company.
 <a href="https://www.codewars.com/kata/reviews/54df3072a1b757b06d000050/groups/6196e8b969187e0001426b21">This is the link to my code on CodeWars.</a></p>
   
-
+<h2 id="code">My Code</h2>
+<h3>Exercise 1</h3>
+<p>It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.</p>
+<pre>
+   <code>
+   function removeChar(str){
+      let ar = str.split('');
+      ar.pop();
+      ar.shift();
+      return(ar.join(''))
+   };
+   </code>
+</pre>
+<h3>Exercise 2</h3>
+<p>Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+   Note: input will never be an empty string</p>
+<pre>
+ <code> 
+   function fakeBin(x){
+      const num = x.split('');
+      let numnew =[];
+      for( let i= 0; i < num.length; i++){
+        if(num[i] >= 5){
+          numnew.push('1')
+        }else{
+          numnew.push('0')
+        }
+      }
+      return( numnew.join(''))
+   } 
+ </code>
+</pre>
+<h3>Exercise 3</h3>
+<p>Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
+   </p>
+<pre> 
+   <code>
+   function toBinary(n){
+      let ar =[]
+      let b =n;
+      if(n==1){
+         return 1
+      }
+      for(let i = n; i > 0; i--){
+         if(b%2>0){
+            b= (b-1)/2;
+            ar.push(1);
+         }else{
+            b= b/2;
+            ar.push(0);
+         }
+      }
+      let j= ar.reverse();
+      let str = j.join('');
+      return (Number(str));
+   } 
+   </code>
+</pre>
 <h2 id="interest">Interests</h2> 
 <ul class="interests">
     <li>Dinosaurs</li>
@@ -82,7 +143,7 @@
     <footer>
       <a href="https://rs.school/js/"> <img src="rs_school_js.svg" width="100" height="100"></a>
       <a href="https://github.com/TashaMia"> <img src="Github.svg" width="60" height="60"></a>
-      <p>The year this application was made in 2021</p> 
+      <p>Made in 2021.</p> 
     </footer>
     </body>
 </html>
