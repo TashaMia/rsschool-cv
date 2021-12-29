@@ -16,10 +16,22 @@ header{
  background: linear-gradient(90deg, rgba(12,8,79,1) 0%, rgba(71,0,143,1) 0%, rgba(208,65,127,1) 100%, rgba(14,8,125,1) 100%);
     width: 96%; 
     margin-top: 5px;
+    position: fixed;
+      top:0px;
+      backdrop-filter:blur(30px);
+      opacity: 0.9;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 
     
 }
+
 main{
+    margin-top:20%;
     display:flex;
     align-items: center;
     justify-content: center;
